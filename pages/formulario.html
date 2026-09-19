@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="../assets/icon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../assets/icon/favicon.svg" />
+    <link rel="shortcut icon" href="../assets/icon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/icon/apple-touch-icon.png" />
+    <link rel="manifest" href="../assets/icon/site.webmanifest" />
+    <link href="../assets/css/apresentacao.css" rel="stylesheet">
+    <link href="../assets/css/nav.css" rel="stylesheet">
+    <link href="../assets/css/cadastro.css" rel="stylesheet">
+    <title>ConectaTech</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar" aria-label="Navegação principal">
+            <ul class="navbar-lista">
+                <li><a href="/index.html" aria-current="page">Home</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="formulario.html">Se Inscreva-se</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+  <h1>Faça parte da ConectaTech</h1>
+  <p>
+    Participe das nossas formações, atue como voluntário ou apoie
+    nossas iniciativas de inclusão digital.
+  </p>
+
+  <form>
+    <fieldset>
+      <legend>Como você deseja participar?</legend>
+
+      <label for="motivo">Escolha uma opção</label>
+      <select id="motivo" name="motivo" required>
+        <option value="">Selecione uma opção</option>
+        <option value="monitor">Ser monitor voluntário</option>
+        <option value="participante">Participar das formações</option>
+        <option value="doacao">Doar equipamentos</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Seus dados</legend>
+
+      <label for="nome">Nome completo</label>
+      <input type="text" id="nome" name="nome" autocomplete="name" required>
+
+      <label for="nascimento">Data de nascimento</label>
+      <input type="date" id="nascimento" name="nascimento" required>
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" autocomplete="email" placeholder="contato@conectatech.com" required> 
+
+      <label for="telefone">Telefone com DDD</label>
+      <input type="tel" id="telefone" name="telefone" placeholder="15 99195-3437" pattern="[0-9]{2} [0-9]{4,5}-[0-9]{4}"
+        title="Digite o DDD e o telefone no formato 15 99195-3437" autocomplete="tel" required>
+
+      <label for="endereco">Endereço</label>
+      <input type="text" id="endereco" name="endereco" autocomplete="street-address">
+
+      <label for="cidade">Cidade</label>
+      <input type="text" id="cidade" name="cidade" autocomplete="address-level2" required>
+
+      <label for="estado">Estado</label>
+      <select id="estado" name="estado" required>
+        <option value="">Selecione um estado</option>
+        <option value="AC">Acre</option>
+        <option value="AL">Alagoas</option>
+        <option value="AP">Amapá</option>
+        <option value="AM">Amazonas</option>
+        <option value="BA">Bahia</option>
+        <option value="CE">Ceará</option>
+        <option value="DF">Distrito Federal</option>
+        <option value="ES">Espírito Santo</option>
+        <option value="GO">Goiás</option>
+        <option value="MA">Maranhão</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="MS">Mato Grosso do Sul</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="PA">Pará</option>
+        <option value="PB">Paraíba</option>
+        <option value="PR">Paraná</option>
+        <option value="PE">Pernambuco</option>
+        <option value="PI">Piauí</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="RO">Rondônia</option>
+        <option value="RR">Roraima</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="SP">São Paulo</option>
+        <option value="SE">Sergipe</option>
+        <option value="TO">Tocantins</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Informações adicionais</legend>
+
+      <label for="mensagem">Mensagem ou observações</label>
+      <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+    </fieldset>
+
+    <button type="submit">Enviar cadastro</button>
+  </form>
+</main>
+
+
+<footer class="rodape">
+  <div class="rodape-conteudo">
+    <div class="rodape-coluna">
+      <img
+        class="rodape-logo"
+        src="../assets/icon/favicon.svg"
+        alt="ConectaTech"
+      >
+      <p>Conectando pessoas e oportunidades por meio da tecnologia.</p>
+    </div>
+
+    <nav class="rodape-coluna" aria-label="Acesso rápido">
+      <h2>Acesso rápido</h2>
+      <ul>
+        <li><a href="cadastro.html">Seja um monitor</a></li>
+        <li><a href="projetos.html">Participe dos nossos projetos</a></li>
+        <li><a href="doacoes.html">Doe equipamentos</a></li>
+      </ul>
+    </nav>
+
+    <div class="rodape-coluna">
+      <h2>Acompanhe a gente</h2>
+      <ul>
+        <li><a href="LINK_DO_FACEBOOK">Facebook</a></li>
+        <li><a href="LINK_DO_INSTAGRAM">Instagram</a></li>
+      </ul>
+    </div>
+
+    <div class="rodape-coluna">
+      <h2>Entre em contato</h2>
+      <ul>
+        <li><a href="LINK_DO_WHATSAPP">WhatsApp</a></li>
+        <li><a href="mailto:contato@conectatech.org">contato@conectatech.org</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="rodape-final">© 2026 ConectaTech. Projeto acadêmico.</p>
+</footer>
+</body>
+</html>
